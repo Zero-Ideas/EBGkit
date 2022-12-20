@@ -105,12 +105,21 @@ function ebgkit:IsHoldingMouse(player)
 end
 
 function ebgkit:FireSpell(element,spell,arguments,charge)
-    game:GetService("ReplicatedStorage").Remotes.DoClientMagic:FireServer(element,spell)
+    if type(arguments) == "table" then
+        game:GetService("ReplicatedStorage").Remotes.DoClientMagic:FireServer(element,spell,arguments[1])
+    else
+        game:GetService("ReplicatedStorage").Remotes.DoClientMagic:FireServer(element,spell)
+    end
+    
     if charge then
         wait(charge)
     end
     if arguments then
-        game:GetService("ReplicatedStorage").Remotes.DoMagic:InvokeServer(element,spell,arguments)
+        if type(arguments) == "table" then
+            game:GetService("ReplicatedStorage").Remotes.DoMagic:InvokeServer(element,spell,arguments[2])
+        else
+            game:GetService("ReplicatedStorage").Remotes.DoMagic:InvokeServer(element,spell,arguments)
+        end
     else
         game:GetService("ReplicatedStorage").Remotes.DoMagic:InvokeServer(element,spell)
     end
