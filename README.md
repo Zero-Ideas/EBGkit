@@ -1,6 +1,6 @@
 # **EBGkit**
 ```lua
-local ebgkit = loadstring(game:HttpGet("https://raw.githubusercontent.com/happyplay098/modules/main/EBGkit.lua"))()
+local ebgkit = loadstring(game:HttpGet("https://raw.githubusercontent.com/happyplay098/EBGkit/main/loader.lua"))()
 ```
 # **Documentation**
 > Before continuing, all examples will assume that there is a player called testdummy123 within your server.
@@ -18,7 +18,7 @@ local ebgkit = loadstring(game:HttpGet("https://raw.githubusercontent.com/happyp
 | ------ |
 | Nil (No Returned Value)|
 ```lua
-local ebgkit = loadstring(game:HttpGet("https://raw.githubusercontent.com/happyplay098/modules/main/EBGkit.lua"))()
+local ebgkit = loadstring(game:HttpGet("https://raw.githubusercontent.com/happyplay098/EBGkit/main/loader.lua"))()
 ebgkit:FireSpell("Fire","Great Fire Blast") -- will activate great fire blast
 ```
 **Additional information**
@@ -36,7 +36,7 @@ ebgkit:FireSpell("Fire","Great Fire Blast") -- will activate great fire blast
 | ------ |
 | Nil (No Returned Value)|
 ```lua
-local ebgkit = loadstring(game:HttpGet("https://raw.githubusercontent.com/happyplay098/modules/main/EBGkit.lua"))()
+local ebgkit = loadstring(game:HttpGet("https://raw.githubusercontent.com/happyplay098/EBGkit/main/loader.lua"))()
 ebgkit:Punch() -- will attempt to punch the nearest player within 50 studs
 ebgkit:Punch("test") -- will attempt to punch testdummy123
 ebgkit:Punch(game.Players.testdummy123) -- will attempt to punch testdummy123
@@ -53,7 +53,7 @@ ebgkit:Punch(game.Players.testdummy123) -- will attempt to punch testdummy123
 | ------ |
 | Userdata (Mouse) |
 ```lua
-local ebgkit = loadstring(game:HttpGet("https://raw.githubusercontent.com/happyplay098/modules/main/EBGkit.lua"))()
+local ebgkit = loadstring(game:HttpGet("https://raw.githubusercontent.com/happyplay098/EBGkit/main/loader.lua"))()
 ebgkit:GetMouse() -- returns your mouse
 ```
 
@@ -68,7 +68,7 @@ ebgkit:GetMouse() -- returns your mouse
 | ------ |
 | Instance (player) |
 ```lua
-local ebgkit = loadstring(game:HttpGet("https://raw.githubusercontent.com/happyplay098/modules/main/EBGkit.lua"))()
+local ebgkit = loadstring(game:HttpGet("https://raw.githubusercontent.com/happyplay098/EBGkit/main/loader.lua"))()
 ebgkit:GetPlayer("test") -- returns game.Players.testdummy123
 ```
 **Additional information**
@@ -84,7 +84,7 @@ ebgkit:GetPlayer("test") -- returns game.Players.testdummy123
 | ------ |
 | Instance (Model) |
 ```lua
-local ebgkit = loadstring(game:HttpGet("https://raw.githubusercontent.com/happyplay098/modules/main/EBGkit.lua"))()
+local ebgkit = loadstring(game:HttpGet("https://raw.githubusercontent.com/happyplay098/EBGkit/main/loader.lua"))()
 ebgkit:GetCharacter("test") -- returns game.Workspace.testdummy123 OR game.Players.testdummy123.Character
 ebgkit:GetCharacter(game.Players.testdummy123) -- returns game.Workspace.testdummy123 OR game.Players.testdummy123.Character
 
@@ -104,7 +104,7 @@ ebgkit:GetCharacter(game.Players.testdummy123) -- returns game.Workspace.testdum
 | ------ |
 | Vector3 (player's mouse position) |
 ```lua
-local ebgkit = loadstring(game:HttpGet("https://raw.githubusercontent.com/happyplay098/modules/main/EBGkit.lua"))()
+local ebgkit = loadstring(game:HttpGet("https://raw.githubusercontent.com/happyplay098/EBGkit/main/loader.lua"))()
 ebgkit:GetServerMousePos("test") -- returns testdummy123's mouse position
 ebgkit:GetServerMousePos(game.Players.testdummy123) -- returns testdummy123's mouse position
 ebgkit:GetServerMousePos() -- returns your mouse position
@@ -122,7 +122,7 @@ ebgkit:GetServerMousePos() -- returns your mouse position
 | ------ |
 | Vector3 (player's camera position) |
 ```lua
-local ebgkit = loadstring(game:HttpGet("https://raw.githubusercontent.com/happyplay098/modules/main/EBGkit.lua"))()
+local ebgkit = loadstring(game:HttpGet("https://raw.githubusercontent.com/happyplay098/EBGkit/main/loader.lua"))()
 ebgkit:GetServerCameraPos("test") -- returns testdummy123's camera position
 ebgkit:GetServerCameraPos(game.Players.testdummy123) -- returns testdummy123's camera position
 ebgkit:GetServerCameraPos() -- returns your camera position
@@ -140,7 +140,7 @@ ebgkit:GetServerCameraPos() -- returns your camera position
 | ------ |
 | Instance (Player) |
 ```lua
-local ebgkit = loadstring(game:HttpGet("https://raw.githubusercontent.com/happyplay098/modules/main/EBGkit.lua"))()
+local ebgkit = loadstring(game:HttpGet("https://raw.githubusercontent.com/happyplay098/EBGkit/main/loader.lua"))()
 ebgkit:GetNearestPlayer(100) -- returns the nearest player within 100 studs
 ebgkit:GetNearestPlayer() -- returns the nearest player in the game
 ```
@@ -156,7 +156,7 @@ ebgkit:GetNearestPlayer() -- returns the nearest player in the game
 | ------ |
 | Instance (Player) |
 ```lua
-local ebgkit = loadstring(game:HttpGet("https://raw.githubusercontent.com/happyplay098/modules/main/EBGkit.lua"))()
+local ebgkit = loadstring(game:HttpGet("https://raw.githubusercontent.com/happyplay098/EBGkit/main/loader.lua"))()
 ebgkit:GetNearestPlayerToMouse(100) -- returns the nearest player within 100 studs to your mouse
 ebgkit:GetNearestPlayerToMouse() -- returns the nearest player in the game to your mouse
 ```
@@ -172,7 +172,7 @@ ebgkit:GetNearestPlayerToMouse() -- returns the nearest player in the game to yo
 | ------ |
 | Table (player's data) |
 ```lua
-local ebgkit = loadstring(game:HttpGet("https://raw.githubusercontent.com/happyplay098/modules/main/EBGkit.lua"))()
+local ebgkit = loadstring(game:HttpGet("https://raw.githubusercontent.com/happyplay098/EBGkit/main/loader.lua"))()
 ebgkit:GetPlayerData("test") -- returns testdummy123's data
 ebgkit:GetPlayerData(game.Players.testdummy123) -- returns testdummy123's data
 ebgkit:GetPlayerData() -- returns your data
@@ -189,7 +189,7 @@ ebgkit:GetPlayerData() -- returns your data
 | ------ |
 | Boolean |
 ```lua
-local ebgkit = loadstring(game:HttpGet("https://raw.githubusercontent.com/happyplay098/modules/main/EBGkit.lua"))()
+local ebgkit = loadstring(game:HttpGet("https://raw.githubusercontent.com/happyplay098/EBGkit/main/loader.lua"))()
 ebgkit:IsHitByAce() -- returns true if you have been hit by ace, false if not
 ```
 
@@ -204,7 +204,7 @@ ebgkit:IsHitByAce() -- returns true if you have been hit by ace, false if not
 | ------ |
 | Boolean (true if the the movedirection was set, false if not) |
 ```lua
-local ebgkit = loadstring(game:HttpGet("https://raw.githubusercontent.com/happyplay098/modules/main/EBGkit.lua"))()
+local ebgkit = loadstring(game:HttpGet("https://raw.githubusercontent.com/happyplay098/EBGkit/main/loader.lua"))()
 ebgkit:SetMoveDirection(1) - returns true 
 ```
 **Additional Information**
@@ -223,7 +223,7 @@ ebgkit:SetMoveDirection(1) - returns true
 | ------ |
 | Boolean |
 ```lua
-local ebgkit = loadstring(game:HttpGet("https://raw.githubusercontent.com/happyplay098/modules/main/EBGkit.lua"))()
+local ebgkit = loadstring(game:HttpGet("https://raw.githubusercontent.com/happyplay098/EBGkit/main/loader.lua"))()
 ebgkit:IsHoldingMouse("test") -- returns true if testdummy123 is holding their mouse, false if not
 ebgkit:IsHoldingMouse(game.Players.testdummy123) -- returns true if testdummy123 is holding their mouse, false if not
 ebgkit:IsHoldingMouse() -- returns true if you are holding your mouse, false if not
