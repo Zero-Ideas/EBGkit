@@ -6,6 +6,9 @@ FUNCTION: ebgkit:GetMouse()
 ACCEPTED ARGUMENTS: <nil> (accepts no arguments)
 RETURNS: <Mouse>
 gets your mouse
+
+local ebgkit = loadstring(game:HttpGet("https://raw.githubusercontent.com/happyplay098/modules/main/EBGkit.lua"))()
+ebgkit:GetMouse() -- returns your mouse
 ]]
 function ebgkit:GetMouse()
     return game.Players.LocalPlayer:GetMouse()
@@ -297,7 +300,6 @@ if a charge is specified, it will wait for that amount of time before firing the
 
 example:
 local ebgkit = loadstring(game:HttpGet("https://raw.githubusercontent.com/happyplay098/modules/main/EBGkit.lua"))()
-
 ebgkit:FireSpell("Fire","Great Fire Blast") -- will activate great fire blast
 
 ]]
