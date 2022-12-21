@@ -205,7 +205,7 @@ ebgkit:IsHitByAce() -- returns true if you have been hit by ace, false if not
 | Boolean (true if the the movedirection was set, false if not) |
 ```lua
 local ebgkit = loadstring(game:HttpGet("https://raw.githubusercontent.com/happyplay098/EBGkit/main/loader.lua"))()
-ebgkit:SetMoveDirection(1) - returns true 
+ebgkit:SetMoveDirection(1) -- returns true 
 ```
 **Additional Information**
 - if the movedirection is positive, you will move as normal
