@@ -190,7 +190,6 @@ function ebgkit:GetNearestPlayerToMouse(specifiedradius)
         if v.Character == nil or v.Character.Parent == nil or v.Character:FindFirstChild('HumanoidRootPart') == nil then continue end
         if v.Character.Humanoid.Health <= 0 then continue end
         local d = (mouse.Hit.p - v.Character.HumanoidRootPart.Position).Magnitude
-        print(d)
         if d < radius then
             radius = d
             p = v
