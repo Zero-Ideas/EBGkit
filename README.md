@@ -1,4 +1,8 @@
-# **EBGkit Documentation**
+# **EBGkit**
+```lua
+local ebgkit = loadstring(game:HttpGet("https://raw.githubusercontent.com/happyplay098/modules/main/EBGkit.lua"))()
+```
+# **Documentation**
 > Before continuing, all examples will assume that there is a player called testdummy123 within your server.
 
 ### **EBGkit:FireSpell(element, spell, arguments, charge)**
