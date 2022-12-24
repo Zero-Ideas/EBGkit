@@ -303,7 +303,15 @@ ebgkit:FireSpell("Fire","Great Fire Blast") -- will activate great fire blast
 
 ]]
 function ebgkit:FireSpell(element,spell,arguments,charge)
+    local usetable = false
     if type(arguments) == "table" then
+        if #arguments == 2 then
+            for i,v in pairs(arguments) do
+                usetable = (type(i) == "number")
+            end
+        end
+    end
+    if usetable then
         game:GetService("ReplicatedStorage").Remotes.DoClientMagic:FireServer(element,spell,arguments[1])
     else
         game:GetService("ReplicatedStorage").Remotes.DoClientMagic:FireServer(element,spell)
@@ -313,7 +321,7 @@ function ebgkit:FireSpell(element,spell,arguments,charge)
         wait(charge)
     end
     if arguments then
-        if type(arguments) == "table" then
+        if usetable then
             game:GetService("ReplicatedStorage").Remotes.DoMagic:InvokeServer(element,spell,arguments[2])
         else
             game:GetService("ReplicatedStorage").Remotes.DoMagic:InvokeServer(element,spell,arguments)
@@ -322,6 +330,7 @@ function ebgkit:FireSpell(element,spell,arguments,charge)
         game:GetService("ReplicatedStorage").Remotes.DoMagic:InvokeServer(element,spell)
     end
 end
+
 
 --[[
 FUNCTION: ebgkit:Punch(player)
